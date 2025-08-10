@@ -12,7 +12,8 @@ toggled.addEventListener('click', () => {
 });
 
 // Check saved theme on load
-if (localStorage.getItem('theme') === 'dark') {
+function darkModeTheme() {
+  if (localStorage.getItem('theme') === 'dark') {
     bodyElement.classList.add('dark');
     blogLinks.forEach(link => link.classList.add('blog-dark'));
     darkModeBtn.textContent = 'light';
@@ -33,3 +34,6 @@ darkModeBtn.addEventListener('click', () => {
         darkModeBtn.textContent = 'dark';
     }
 });
+}
+
+darkModeTheme();
