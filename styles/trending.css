@@ -1,0 +1,33 @@
+.trendy {
+    padding: 40px 30px;
+    padding-top: 8ch;
+    background-color: rgba(134, 133, 133, 0.555);
+}
+
+.trendy-container {
+    height: 55ch;
+    overflow: auto;
+}
+.trending {
+    padding: 20px;
+}
+.tren {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.num {
+    font-size: 35px;
+    font-weight: bolder;
+    color: #87ceeb;
+}
+.tren-con {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid #87ceeb;
+    padding: 10px 20px;
+}
