@@ -1,0 +1,230 @@
+/*accent color soft blue: #c9e4ca
+#4682b4
+
+secondary color light gray: #f7f7f7
+
+primary color pale blue green: #87ceeb*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body {
+    overflow-x: hidden;
+}
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.header-main {
+    width: 100%;
+    height: 9ch;
+    background-color: #87ceeb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 35px;
+    position: fixed;
+    top: 0px;
+}
+.logo-container span {
+    color: #f7f7f7;
+}
+.logo-container a {
+    color: black;
+}
+.hamburger {
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.toggle-span {
+    width: 50px;
+    height: 4px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.navigation {
+    position: absolute;
+    top: 9ch;
+    right: 0px;
+    background-color: #333;
+    width: 40ch;
+    height: 90vh;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+.js-navigation-show {
+    visibility: visible;
+    overflow: hidden;
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nav {
+    font-size: 17px;
+    color: white;
+}
+.js-dark-link {
+    color: white;
+}
+.cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5ch;
+}
+.search-bar {
+    background-color:  gray;
+    width: fit-content;
+    padding: 7px 10px;
+    border-radius: 30px;
+}
+.search-input {
+    padding: 5px;
+    border: none;
+    background-color: gray;
+    border-radius: 50px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+.search-input::placeholder {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+.dark-mode {
+    height: fit-content;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+    .header-main{
+        height: 7ch;
+        padding: 0px 55px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-container a {
+        font-size: 25px;
+    }
+    .navigation {
+        background-color: transparent;
+        position: static;
+        visibility: visible;
+        flex-direction: row;
+        height: fit-content;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .active {
+        background-color: rgb(185, 180, 180);
+        padding: 11px 5px;
+        border-bottom: 3px solid #f7f7f7;
+    }
+    .nav-links {
+        flex-direction: row;
+        position: absolute;
+        top: 7ch;
+        background-color: gray;
+        right: 0;
+        left: 0;
+        height: 5ch;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .nav {
+        white-space: nowrap;
+        color: white;
+        transition: 0.2s;
+        padding: 14px 5px;
+        border-bottom: 3px solid transparent;
+        font-size: 12px;
+    }
+    .nav:hover {
+        background-color: rgba(185, 180, 180, 0.644);
+        border-bottom: 3px solid #f7f7f7;
+    }
+    .hamburger {
+        visibility: hidden;
+    }
+    .cont {
+        margin: 0px;
+    }
+}
+
+.footer {
+    background-color: #333;
+    height: fit-content;
+    color: white;
+}
+.footer-container {
+    padding: 40px 25px;
+
+}
+.newsletter-head {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.form-container {
+    margin-top: 20px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-txt {
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+.newsletter-input {
+    background-color: #4d4b4b;
+    border: none;
+    outline: none;
+    padding: 5px 25px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+}
+.newsletter-button {
+    background-color: #87ceeb;
+    margin-top: 20px;
+    color: #333;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+.footer-second {
+    background-color: #87ceeb;
+    height: 50ch;
+}
+
+
+
