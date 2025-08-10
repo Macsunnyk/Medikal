@@ -1,0 +1,18 @@
+.latest{
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(83, 81, 81, 0.521);
+}
+.latest-posts-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 10px;
+    
+}
+
+.latest-img {
+    width: 90%;
+}
