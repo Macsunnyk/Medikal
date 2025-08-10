@@ -1,0 +1,13 @@
+Save the dark mode preference in localStorage, so it stays on when the user comes back.
+
+Smooth transition animation when switching themes.
+Form validation (check for empty fields and valid email).
+
+Show success/failure messages when the user subscribes.
+
+Store submitted emails temporarily in localStorage (for demo purposes) or connect to a real service like Mailchimp.
+Scroll to top button that appears when the user scrolls down.
+
+Responsive font resizing for better reading on mobile.
+
+Share buttons for each blog post preview (Facebook, Twitter, WhatsApp).
