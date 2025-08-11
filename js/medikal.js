@@ -4,7 +4,7 @@ const darkModeBtn = document.querySelector('.js-dark-mode');
 const bodyElement = document.querySelector('.body');
 const navLinks = document.querySelectorAll('.js-nav');
 const blogLinks = document.querySelectorAll('.js-blog');
-const blogDiv = document.querySelectorAll('.js-border')
+const blogDiv = document.querySelectorAll('.js-border');
 
 // Mobile nav toggle
 toggled.addEventListener('click', () => {
