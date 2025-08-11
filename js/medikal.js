@@ -3,7 +3,7 @@ const navigationElement = document.querySelector('.js-navigation');
 const darkModeBtn = document.querySelector('.js-dark-mode');
 const bodyElement = document.querySelector('.body');
 const navLinks = document.querySelectorAll('.js-nav');
-const blogLinks = document.querySelectorAll('.js-blog');
+const blogLinks = document.querySelectorAll('a');
 const blogDiv = document.querySelectorAll('.js-border');
 
 // Mobile nav toggle

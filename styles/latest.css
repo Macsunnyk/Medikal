@@ -16,3 +16,19 @@
 .latest-img {
     width: 90%;
 }
+.latest-con {
+    padding: 10px 0px;
+}
+.latest-tag {
+    background-color: #4d4b4b;
+    width: fit-content;
+    padding: 2px 5px;
+    font-size: 10px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.latest-con a {
+    color: black;
+}
