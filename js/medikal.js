@@ -14,11 +14,12 @@ toggled.addEventListener('click', () => {
 // Check saved theme on load
 function darkModeTheme() {
     if (localStorage.getItem('theme') === 'dark') {
-    bodyElement.classList.add('dark');
-    blogLinks.forEach(link => link.classList.add('blog-dark'));
-    darkModeBtn.textContent = 'light';
-} else {
-    darkModeBtn.textContent = 'dark';
+        bodyElement.classList.add('dark');
+        blogLinks.forEach(link => link.classList.add('blog-dark'));
+        darkModeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    } else {
+        darkModeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    }
 }
 
 // Dark mode toggle with save
@@ -28,12 +29,11 @@ darkModeBtn.addEventListener('click', () => {
 
     if (bodyElement.classList.contains('dark')) {
         localStorage.setItem('theme', 'dark');
-        darkModeBtn.textContent = 'light';
+        darkModeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
     } else {
         localStorage.setItem('theme', 'light');
-        darkModeBtn.textContent = 'dark';
+        darkModeBtn.innerHTML = '<i class="fa-solid fa-moon "></i>';
     }
 });
-}
 
 darkModeTheme();

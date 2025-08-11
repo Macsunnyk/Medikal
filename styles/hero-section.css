@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    margin-top: 5ch;
+    margin-top: 12ch;
 }
 
 .call-to-action {
@@ -30,7 +30,7 @@
 }
 
 .connect-btn {
-    background-color: #c9e4ca;
+    background-color: #87ceeb;
     padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
@@ -43,6 +43,14 @@
 }
 
 
+@media screen and (min-width: 600px) {
+    .call-to-action {
+        width: 65%;
+    }
+    .partner {
+        font-size: 30px;
+    }
+}
 
 @media screen and (min-width: 1000px) {
     .call-to-action {

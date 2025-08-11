@@ -27,7 +27,7 @@ body {
 
 .header-main {
     width: 100%;
-    height: 6ch;
+    height: 7ch;
     background-color: #87ceeb;
     display: flex;
     align-items: center;
@@ -36,6 +36,8 @@ body {
     position: fixed;
     top: 0px;
 }
+
+
 .logo-container span {
     color: #f7f7f7;
 }
@@ -98,7 +100,7 @@ body {
 .search-bar {
     background-color:  gray;
     width: fit-content;
-    padding: 7px 10px;
+    padding: 10px;
     border-radius: 30px;
 }
 .search-input {
@@ -116,70 +118,80 @@ body {
     font-weight: bolder;
 }
 .dark-mode {
-    height: fit-content;
+    height: 35px;
+    width: 35px;
     padding: 5px;
     border-radius: 50px;
+    border: none;
+}
+.fa-moon {
+    font-size: 25px;
+}
+.fa-sun {
+    font-size: 25px;
 }
 
-@media screen and (min-width: 1000px) {
-    .header-main{
-        height: 7ch;
-        padding: 0px 55px;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .logo-container a {
-        font-size: 25px;
-    }
-    .navigation {
-        background-color: transparent;
-        position: static;
-        visibility: visible;
-        flex-direction: row;
-        height: fit-content;
-        width: fit-content;
-        align-items: center;
-        justify-content: center;
 
-    }
-    .active {
-        background-color: rgb(185, 180, 180);
-        padding: 11px 5px;
-        border-bottom: 3px solid #f7f7f7;
-    }
-    .nav-links {
-        flex-direction: row;
-        position: absolute;
-        top: 7ch;
-        background-color: gray;
-        right: 0;
-        left: 0;
-        height: 5ch;
-        padding: 10px 20px;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-    .nav {
-        white-space: nowrap;
-        color: white;
-        transition: 0.2s;
-        padding: 14px 5px;
-        border-bottom: 3px solid transparent;
-        font-size: 12px;
-    }
-    .nav:hover {
-        background-color: rgba(185, 180, 180, 0.644);
-        border-bottom: 3px solid #f7f7f7;
-    }
-    .hamburger {
-        visibility: hidden;
-    }
-    .cont {
-        margin: 0px;
-    }
+.logo-container a {
+    font-size: 25px;
 }
+.navigation {
+    background-color: transparent;
+    position: static;
+    visibility: visible;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+
+}
+.active {
+    background-color: rgb(185, 180, 180);
+    padding: 11px 5px;
+    border-bottom: 3px solid #f7f7f7;
+}
+.nav-links {
+    flex-direction: row;
+    position: absolute;
+    top: 7ch;
+    background-color: gray;
+    right: 0;
+    left: 0;
+    height: 5ch;
+    padding: 10px 40px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+        overflow-x: auto; /* allow horizontal scroll */
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* smooth scroll on mobile */
+    scrollbar-width: none; /* Firefox - hide scrollbar */
+}
+
+.nav-links::-webkit-scrollbar {
+display: none; /* Chrome, Safari, Edge - hide scrollbar */
+}
+.nav {
+    white-space: nowrap;
+    color: white;
+    transition: 0.2s;
+    padding: 14px 5px;
+    border-bottom: 3px solid transparent;
+    font-size: 12px;
+}
+.nav:hover {
+    background-color: rgba(185, 180, 180, 0.644);
+    border-bottom: 3px solid #f7f7f7;
+}
+.hamburger {
+    visibility: hidden;
+}
+.cont {
+    margin: 0px;
+}
+
 
 .footer {
     background-color: #333;
