@@ -10,6 +10,7 @@
 }
 .trending {
     padding: 20px;
+    background-color: rgba(134, 133, 133, 0.425);
 }
 .tren {
     display: flex;

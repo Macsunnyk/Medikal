@@ -2,7 +2,6 @@ const toggled = document.querySelector('.js-toggle');
 const navigationElement = document.querySelector('.js-navigation');
 const darkModeBtn = document.querySelector('.js-dark-mode');
 const bodyElement = document.querySelector('.body');
-const navLinks = document.querySelectorAll('.js-nav');
 const blogLinks = document.querySelectorAll('a');
 const blogDiv = document.querySelectorAll('.js-border');
 
@@ -14,7 +13,7 @@ toggled.addEventListener('click', () => {
 
 // Check saved theme on load
 function darkModeTheme() {
-  if (localStorage.getItem('theme') === 'dark') {
+    if (localStorage.getItem('theme') === 'dark') {
     bodyElement.classList.add('dark');
     blogLinks.forEach(link => link.classList.add('blog-dark'));
     darkModeBtn.textContent = 'light';
