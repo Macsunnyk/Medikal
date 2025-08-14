@@ -114,7 +114,7 @@ trendingPost.forEach((trending) => {
                 <p class="tren-tag">
                     ${trending.tags}
                 </p>
-                <a href="#">
+                <a href="#" class="tren-links">
                     ${trending.blogTitle}
                 </a>
             </div>
