@@ -1,202 +1,275 @@
-const topHealthPosts = [{
+export const healthPosts = [{
     tags: 'Nutriton',
     blogTitle: '10+ tips for eating out on a low FODMAP diet',
     blogPostImage: 'images/image1.jpg',
-    keyword: ['food', 'health']
+    keyword: ['how to eat health', 'FODMAP diet'],
+    createdAt: '2025-08-14',
+    trending: true
 },
 {
     tags: 'Nutriton',
-    blogTitle: '10+ tips for eating out on a low FODMAP diet',
-    blogPostImage: 'images/image2.jpg'
-},
-{
+    blogTitle: '10 Everyday Habits That Secretly Boost Your Immune System',
+    blogPostImage: 'images/image2.jpg',
+    createdAt: '2025-08-12',
+    trending: false
+    },
+    {
     tags: 'Nutriton',
-    blogTitle: '10+ tips for eating out on a low FODMAP diet',
-    blogPostImage: 'images/image3.jpg'
-},
-{
+    blogTitle: 'The Truth About Detox Diets: What Works and What Doesn’t',
+    blogPostImage: 'images/image3.jpg',
+    createdAt: '2025-08-17',
+    trending: true
+    },
+    {
+    tags: 'Diseases',
+    blogTitle: 'Healthy Eating on a Budget: Tips for Nutritious Low-Cost Meals',
+    blogPostImage: 'images/image4.jpg',
+    createdAt: '2025-08-11',
+    trending: false
+    },
+    {
     tags: 'Nutriton',
-    blogTitle: '10+ tips for eating out on a low FODMAP diet',
-    blogPostImage: 'images/image4.jpg'
-},
-{
-    tags: 'Nutriton',
-    blogTitle: '10+ tips for eating out on a low FODMAP diet',
-    blogPostImage: 'images/image5.jpg'
-}];
-
-
-let topPostHTML = '';
-topHealthPosts.forEach((topPosts) => {
-    topPostHTML += `
-        <div class="top-one js-border">
-            <div class="top-one-img">
-                <img src="${topPosts.blogPostImage}" alt="" class="top-one-image just-one">
-            </div>
-            <div class="top-one-con">
-                <div class="tag">
-                    <p>${topPosts.tags}</p>
-                </div>
-                <div class="blog-title">
-                    <a href="#" class="blog-title-link js-blog">
-                        ${topPosts.blogTitle}
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    `;
-});
-
-document.querySelector('.js-top-health').innerHTML = topPostHTML;
-
-
-
-const latestHealthPost = [{
+    blogTitle: 'Why Sleep Might Be the Most Powerful Medicine You’re Ignoring',
+    blogPostImage: 'images/image5.jpg',
+    createdAt: '2025-08-19',
+    trending: true
+    },
+    {
+    tags: 'Diseases',
+    blogTitle: '5 Simple Morning Habits to Boost Your Energy All Day',
+    blogPostImage: 'images/image5.jpg',
+    createdAt: '2025-08-21',
+    trending: true
+    },
+    {
+    tags: 'Nutrition',
+    blogTitle: 'The Hidden Benefits of Drinking More Water Every Day',
+    blogPostImage: 'images/image4.jpg',
+    createdAt: '2025-08-15',
+    trending: false
+    },
+    {
+    tags: 'Fitness',
+    blogTitle: '10-Minute Workouts That Burn Fat and Build Strength',
     blogPostImage: 'images/image3.jpg',
-    tag: 'nutriton',
-    blogTitle: ' 10+ tips for eating out on a low FODMAP diet',
-    link: '#'
-},
-{
+    createdAt: '2025-08-18',
+    trending: true
+    },
+    {
+    tags: 'Mental Health',
+    blogTitle: 'How to Manage Stress Before It Manages You',
+    blogPostImage: 'images/image2.jpg',
+    createdAt: '2025-08-20',
+    trending: true
+    },
+    {
+    tags: 'Nutrition',
+    blogTitle: 'Superfoods You Should Add to Your Diet This Week',
+    blogPostImage: 'images/image1.jpg',
+    createdAt: '2025-08-17',
+    trending: true
+    },
+    {
+    tags: 'Fitness',
+    blogTitle: '5 Simple Exercises to Boost Your Energy in the Morning',
+    blogPostImage: 'images/image2.jpg',
+    createdAt: '2025-08-18',
+    trending: false
+    },
+    {
+    tags: 'Nutrition',
+    blogTitle: 'The Hidden Dangers of Ultra-Processed Foods and How to Avoid Them',
+    blogPostImage: 'images/image4.jpg',
+    createdAt: '2025-08-17',
+    trending: true
+    },
+    {
+    tags: 'Mental Health',
+    blogTitle: 'Mindfulness for Beginners: A Step-by-Step Guide to Reduce Stress',
+    blogPostImage: 'images/image1.jpg',
+    createdAt: '2025-08-16',
+    trending: false
+    },
+    {
+    tags: 'Diseases',
+    blogTitle: 'Why Drinking Enough Water Can Change Your Skin in 30 Days',
+    blogPostImage: 'images/image5.jpg',
+    createdAt: '2025-08-15',
+    trending: false
+    },
+    {
+    tags: 'Lifestyle',
+    blogTitle: '7 Daily Habits of People Who Live Past 100',
     blogPostImage: 'images/image3.jpg',
-    tag: 'nutriton',
-    blogTitle: ' 10+ tips for eating out on a low FODMAP diet'
-}, {
+    createdAt: '2025-08-14',
+    trending: true
+    },
+    {
+    tags: 'Lifestyle',
+    blogTitle: '20 Daily Habits of People Who Live Past 100',
     blogPostImage: 'images/image3.jpg',
-    tag: 'nutriton',
-    blogTitle: ' 10+ tips for eating out on a low FODMAP diet'
-}, {
-    blogPostImage: 'images/image3.jpg',
-    tag: 'nutriton',
-    blogTitle: ' 10+ tips for eating out on a low FODMAP diet'
-}, {
-    blogPostImage: 'images/image3.jpg',
-    tag: 'nutriton',
-    blogTitle: ' 10+ tips for eating out on a low FODMAP diet'
-}, {
-    blogPostImage: 'images/image3.jpg',
-    tag: 'nutriton',
-    blogTitle: ' 10+ tips for eating out on a low FODMAP diet'
-}, {
-    blogPostImage: 'images/image3.jpg',
-    tag: 'nutriton',
-    blogTitle: ' 10+ tips for eating out on a low FODMAP diet'
-}, {
-    blogPostImage: 'images/image3.jpg',
-    tag: 'nutriton',
-    blogTitle: ' 10+ tips for eating out on a low FODMAP diet'
-}, {
-    blogPostImage: 'images/image3.jpg',
-    tag: 'nutriton',
-    blogTitle: ' 10+ tips for eating out on a low FODMAP diet'
-}, {
-    blogPostImage: 'images/image3.jpg',
-    tag: 'nutriton',
-    blogTitle: ' 10+ tips for eating out on a low FODMAP diet'
-}, {
-    blogPostImage: 'images/image3.jpg',
-    tag: 'nutriton',
-    blogTitle: ' 10+ tips for eating out on a low FODMAP diet'
-}, {
-    blogPostImage: 'images/image3.jpg',
-    tag: 'nutriton',
-    blogTitle: ' 10+ tips for eating out on a low FODMAP diet'
-}];
+    createdAt: '2025-08-14',
+    trending: true
+    },  {
+    tags: 'Diseases',
+    blogTitle: 'Understanding Hypertension: Causes, Symptoms, and Treatment',
+    blogPostImage: 'images/image1.jpg',
+    createdAt: '2025-08-10',
+    trending: true
+    },
+    {
+        tags: 'Nutrition',
+        blogTitle: 'Top 10 Foods to Boost Your Metabolism',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-11',
+        trending: false
+    },
+    {
+        tags: 'Diseases',
+        blogTitle: 'Diabetes Explained: How to Manage Blood Sugar Levels Naturally',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-12',
+        trending: false
+    },
+    {
+        tags: 'Wellness',
+        blogTitle: '5 Daily Rituals for a Happier, Healthier Mind',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-13',
+        trending: true
+    },
+    {
+        tags: 'Diseases',
+        blogTitle: 'Tuberculosis: Early Signs and Prevention Tips',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-09',
+        trending: false
+    },
+    {
+        tags: 'Lifestyle',
+        blogTitle: 'Morning Routines That Set Successful People Apart',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-14',
+        trending: true
+    },
+    {
+        tags: 'Diseases',
+        blogTitle: 'Malaria Myths and Facts: What You Should Know',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-14',
+        trending: false
+    },
+    {
+        tags: 'Fitness',
+        blogTitle: '10-Minute Home Workouts for Busy People',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-15',
+        trending: true
+    },
+    {
+        tags: 'Diseases',
+        blogTitle: 'The Silent Threat: Understanding Chronic Kidney Disease',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-11',
+        trending: false
+    },
+    {
+        tags: 'Mental Health',
+        blogTitle: 'How to Build Emotional Resilience in Tough Times',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-16',
+        trending: true
+    },
+    {
+        tags: 'Diseases',
+        blogTitle: 'Liver Disease: Causes, Symptoms, and Healthy Habits for Prevention',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-13',
+        trending: true
+    },
+    {
+        tags: 'Nutrition',
+        blogTitle: 'Superfoods That Can Improve Your Mood and Energy',
+        blogPostImage: 'images/nutrition2.jpg',
+        createdAt: '2025-08-12',
+        trending: false
+    },
+    {
+        tags: 'Diseases',
+        blogTitle: 'Pneumonia in Adults and Children: Signs You Shouldn’t Ignore',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-15',
+        trending: true
+    },
+    {
+        tags: 'Wellness',
+        blogTitle: 'Why You Should Practice Gratitude Every Morning',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-10',
+        trending: false
+    },
+    {
+        tags: 'Diseases',
+        blogTitle: 'Dengue Fever: Prevention and Treatment Strategies',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-16',
+        trending: false
+    },
+    {
+        tags: 'Lifestyle',
+        blogTitle: 'Minimalist Living: How Decluttering Can Improve Mental Health',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-14',
+        trending: true
+    },
+    {
+        tags: 'Diseases',
+        blogTitle: 'Understanding Alzheimer’s Disease and Early Intervention',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-08',
+        trending: false
+    },
+    {
+        tags: 'Nutrition',
+        blogTitle: 'Healthy Snacks That Won’t Spike Your Blood Sugar',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-15',
+        trending: true
+    },
+    {
+        tags: 'Diseases',
+        blogTitle: 'HIV/AIDS: Facts, Prevention, and Modern Treatment Options',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-17',
+        trending: true
+    },
+    {
+        tags: 'Fitness',
+        blogTitle: 'How Strength Training Benefits Your Bones and Joints',
+        blogPostImage: 'images/image1.jpg',
+        createdAt: '2025-08-09',
+        trending: false
+    }
+];
 
-let latestPostHTML = '';
-
-latestHealthPost.forEach((latestPost) => {
-    latestPostHTML += `
-        <div class="latest-one">
-            <div class="latest-image">
-                <img src="${latestPost.blogPostImage}" alt="" class="latest-img">
-            </div>
-            <div class="latest-con">
-                <p class="latest-tag">
-                    ${latestPost.tag}
-                </p>
-                <a href="#" class="">
-                    ${latestPost.blogTitle}
-                </a>
-            </div>
-        </div>
-    `
-});
-document.querySelector('.js-latest-con').innerHTML = latestPostHTML;
 
 
 
-const trendingPost = [{
-    tag: 'nutriton',
-    blogTitle: ' IV Therapy or gummies: which is better for achieving a glowing skin',
-    number: '1',
-    link: '#'
-}, {
-    tag: 'nutriton',
-    blogTitle: ' IV Therapy or gummies: which is better for achieving a glowing skin',
-    number: '2',
-    link: '#'
-}, {
-    tag: 'nutriton',
-    blogTitle: ' IV Therapy or gummies: which is better for achieving a glowing skin',
-    number: '3',
-    link: '#'
-}, {
-    tag: 'nutriton',
-    blogTitle: ' IV Therapy or gummies: which is better for achieving a glowing skin',
-    number: '4',
-    link: '#'
-}, {
-    tag: 'nutriton',
-    blogTitle: ' IV Therapy or gummies: which is better for achieving a glowing skin',
-    number: '5',
-    link: '#'
-}, {
-    tag: 'nutriton',
-    blogTitle: ' IV Therapy or gummies: which is better for achieving a glowing skin',
-    number: '6',
-    link: '#'
-},  {
-    tag: 'nutriton',
-    blogTitle: ' IV Therapy or gummies: which is better for achieving a glowing skin',
-    number: '7',
-    link: '#'
-}, {
-    tag: 'nutriton',
-    blogTitle: ' IV Therapy or gummies: which is better for achieving a glowing skin',
-    number: '8',
-    link: '#'
-}, {
-    tag: 'nutriton',
-    blogTitle: ' IV Therapy or gummies: which is better for achieving a glowing skin',
-    number: '9',
-    link: '#'
-}, {
-    tag: 'nutriton',
-    blogTitle: ' IV Therapy or gummies: which is better for achieving a glowing skin',
-    number: '10',
-    link: '#'
-}];
+function generateId(title) {
+    let blogId = title.toLowerCase();     //lowercase
+    blogId = blogId.replace(/[^a-z0-9\s-]/g, '') // remove non-alphanumeric characters
+    blogId = blogId.trim();
+    blogId = blogId.replace(/\s+/g, '-'); // replace spaces with hyphens
 
-let trendingPostHTML = '';
+    const randomString = Math.random().toString(36).substring(2, 8);
 
-trendingPost.forEach((trending) => {
-    trendingPostHTML += `
-        <div class="tren">
-            <p class="num">
-                ${trending.number}
-            </p>
-            <div class="tren-con">
-                <p class="tren-tag">
-                    ${trending.tag}
-                </p>
-                <a href="#">
-                    ${trending.blogTitle}
-                </a>
-            </div>
-        </div>
-    `;
-});
+    return `${blogId}-${randomString}`;
+}
 
-document.querySelector('.js-trending').innerHTML = trendingPostHTML;
+
+export const healthPostWithId = healthPosts.map((post) => {
+    return {
+    id: generateId(post.blogTitle),
+    ...post
+    };
+})

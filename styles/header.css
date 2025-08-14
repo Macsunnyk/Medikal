@@ -32,7 +32,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 35px;
+    padding: 0px 25px;
     position: fixed;
     top: 0px;
 }
@@ -123,6 +123,7 @@ body {
     padding: 5px;
     border-radius: 50px;
     border: none;
+    cursor: pointer;
 }
 .fa-moon {
     font-size: 25px;
