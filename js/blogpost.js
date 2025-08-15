@@ -30,14 +30,14 @@ export const healthPosts = [{
     {
     tags: 'Nutriton',
     blogTitle: 'Why Sleep Might Be the Most Powerful Medicine You’re Ignoring',
-    blogPostImage: 'images/image5.jpg',
+    blogPostImage: 'images/sleep-best-medicine.jpg',
     createdAt: '2025-08-19',
     trending: true
     },
     {
     tags: 'Diseases',
     blogTitle: '5 Simple Morning Habits to Boost Your Energy All Day',
-    blogPostImage: 'images/image5.jpg',
+    blogPostImage: 'images/morning.jpg',
     createdAt: '2025-08-21',
     trending: true
     },
@@ -58,7 +58,7 @@ export const healthPosts = [{
     {
     tags: 'Mental Health',
     blogTitle: 'How to Manage Stress Before It Manages You',
-    blogPostImage: 'images/image2.jpg',
+    blogPostImage: 'images/stress.jpg',
     createdAt: '2025-08-20',
     trending: true
     },
@@ -72,7 +72,7 @@ export const healthPosts = [{
     {
     tags: 'Fitness',
     blogTitle: '5 Simple Exercises to Boost Your Energy in the Morning',
-    blogPostImage: 'images/image2.jpg',
+    blogPostImage: 'images/morning.jpg',
     createdAt: '2025-08-18',
     trending: false
     },

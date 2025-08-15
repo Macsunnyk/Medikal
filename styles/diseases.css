@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(83, 81, 81, 0.521);
 }
 .latest-posts-containers {
     display: grid;

@@ -19,10 +19,14 @@ html {
 body {
     overflow-x: hidden;
 }
-.dark {
+.dark  {
     background-color: black;
     color: white;
 }
+.dark a {
+    color: white;
+}
+
 
 
 .header-main {
@@ -32,12 +36,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 25px;
+    padding: 0px 10px;
     position: fixed;
     top: 0px;
 }
 
-
+.logo-container {
+    margin-left: 2ch;
+}
 .logo-container span {
     color: #f7f7f7;
 }
@@ -98,26 +104,14 @@ body {
     margin-top: 5ch;
 }
 .search-bar {
-    background-color:  gray;
     width: fit-content;
     padding: 10px;
     border-radius: 30px;
-}
-.search-input {
-    padding: 5px;
-    border: none;
-    background-color: gray;
-    border-radius: 50px;
-    outline: none;
-    color: white;
     cursor: pointer;
 }
-.search-input::placeholder {
-    color: white;
-    text-align: center;
-    font-weight: bolder;
-}
+
 .dark-mode {
+    background-color: transparent;
     height: 35px;
     width: 35px;
     padding: 5px;

@@ -1,7 +1,6 @@
 .trendy {
     padding: 40px 30px;
     padding-top: 8ch;
-    background-color: rgba(134, 133, 133, 0.555);
 }
 
 .trendy-container {
@@ -10,7 +9,6 @@
 }
 .trending {
     padding: 20px;
-    background-color: rgba(134, 133, 133, 0.425);
     display: flex;
     flex-direction: column;
     justify-content: center;
