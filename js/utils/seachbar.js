@@ -12,6 +12,11 @@ export function search() {
     searchInput.addEventListener('input', () => {
         const query = searchInput.value.trim().toLowerCase();
 
+        if (query.length === 0) {
+            suggest.innerHTML = ''; // remove all suggestions
+            return; // stop the function here
+        }
+
 
         //Check if any post matches the input. Use .filter() and .some():  
         //.includes() lets you match partial words.
