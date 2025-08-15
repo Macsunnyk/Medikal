@@ -18,6 +18,7 @@ html {
 }
 body {
     overflow-x: hidden;
+    background-color: white;
     color: black;
 }
 body a {
@@ -248,5 +249,17 @@ display: none; /* Chrome, Safari, Edge - hide scrollbar */
     color: black;
 }
 
+.form-image {
+    width: 100%;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+.fa-envelope-open {
+    width: 100%;
+}
+.form {
+}
 
 

@@ -40,6 +40,29 @@
     .num {
         font-size: 25px;
     }
+    .form-image {
+    width: fit-content;
+    height: inherit;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+.form-image {
+    width: fit-content;
+}
+.fa-envelope-open {
+    width: 90%;
+}
+.fm {
+    width: 100%;
+}
+.form {
+    max-width: 70ch;
+}
 }
 
 
@@ -84,5 +107,18 @@
     .latest-posts-containers {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .form-image {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .fa-envelope-open {
+        width: 60%;
+        margin-right: 10ch;
+    }
+    .fm {
+        width: 100%;
     }
 }
