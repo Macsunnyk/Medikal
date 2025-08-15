@@ -44,7 +44,7 @@ darkModeTheme();
 
 
 
-const recentPost = healthPostWithId.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).slice(0, 5);
+const recentPost = healthPostWithId.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).slice(0, 6);
 
 
 
@@ -72,7 +72,7 @@ recentPost.forEach((topPosts) => {
 
 document.querySelector('.js-top-health').innerHTML = topPostHTML;
 
-const diseases = healthPostWithId.filter(post => post.tags === 'Diseases').sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).slice(0, 12);
+const diseases = healthPostWithId.filter(post => post.tags === 'Diseases').sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).slice(0, 10);
 
 let diseasesAndDisordersHTML = '';
 

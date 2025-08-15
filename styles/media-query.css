@@ -1,0 +1,88 @@
+
+@media screen and (min-width: 600px) {
+    .call-to-action {
+        width: 65%;
+    }
+    .partner {
+        font-size: 30px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 700px )  {
+    .top-health-post {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 20px;
+    }
+    .latest {
+        padding: 40px 0px;
+    }
+    .latest-trendy {
+        display: grid;
+        grid-template-columns: 55% 33%;
+        padding: 0px 30px;
+        justify-content: center;
+    }
+    .trendy {
+        padding: 40px 0px;
+    }
+    .trendy-container {
+        height: 40ch;
+    }
+    .tren {
+        gap: 15px;
+    }
+    .num {
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (min-width: 800px ) {
+    
+}
+
+
+@media screen and (min-width: 1000px) {
+    .call-to-action {
+        width: 65ch;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .nav-links {
+        justify-content: space-around;
+    }
+    .nav-divide { 
+        display: flex;
+        flex-direction: row;
+        gap: 45px;
+    }
+    .top-head {
+        margin-left: 22ch;
+    }
+    .top-health-post {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+    }
+    .top-one-image {
+        height: 35ch;
+    }
+    .latest-trendy {
+        display: grid;
+        grid-template-columns: 53% 23%;
+        gap: 30px;
+    }
+    .latest-posts-containers {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

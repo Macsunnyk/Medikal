@@ -43,17 +43,3 @@
 }
 
 
-@media screen and (min-width: 600px) {
-    .call-to-action {
-        width: 65%;
-    }
-    .partner {
-        font-size: 30px;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .call-to-action {
-        width: 65ch;
-    }
-}
