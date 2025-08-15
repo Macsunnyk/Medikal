@@ -55,27 +55,62 @@ body a {
 .logo-container a {
     color: black;
 }
-.hamburger {
+
+.search-input {
+    position: absolute;
+    top: 6ch;
+    left: 0;
+    right: 0;
+    background-color: gray;
+    z-index: 1;
     height: fit-content;
-    width: fit-content;
-    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+}
+.search-input-show {
+    display: flex;
+}
+
+.search-con {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 30px;
+    width: 100%;
+    padding: 5px;
+}
+.search-in {
+    width: 95%;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+.search-btn {
+    border: none;
+    background-color: #87ceeb;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.search-suggestion {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    /* padding: 10px; */
+    width: 100%;
+    height: fit-content;
+    gap: 20px;
+    margin-top: 30px;
 }
-.toggle-span {
-    width: 38px;
-    height: 2.8px;
-    background-color: white;
-    border-radius: 20px;
+.suggest {
+    border-bottom: 1px solid #87ceeb;
+    padding: 15px 10px;
 }
 
 .navigation {
     position: absolute;
-    top: 6ch;
+    top: 5ch;
     right: 0px;
     background-color: #333;
     width: 40ch;

@@ -1,4 +1,5 @@
 import {healthPosts, healthPostWithId} from './blogpost.js';
+import { search } from './utils/seachbar.js';
 
 
 
@@ -8,6 +9,20 @@ const darkModeBtn = document.querySelector('.js-dark-mode');
 const bodyElement = document.querySelector('.body');
 const blogLinks = document.querySelectorAll('a');
 const blogDiv = document.querySelectorAll('.js-border');
+const searchBtn = document.querySelector('.js-search');
+const searchContainer = document.querySelector('.js-search-container');
+
+
+//search bar 
+
+searchBtn.addEventListener('click', () => {
+    searchContainer.classList.toggle('search-input-show')
+    searchBtn.addEventListener('click', () => {
+    searchContainer.classList.toggle('search-input-show')
+})
+})
+
+
 
 // Mobile nav toggle
 toggled.addEventListener('click', () => {
